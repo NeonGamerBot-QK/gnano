@@ -67,7 +67,7 @@ proc.on('exit', () => {
         console.log(`Adding file..`)
     cp.execSync(`cd ${tempFolder}/${tempFolder} && git add ${data.filePath}`)
     console.log(`Commiting file..`)
-    cp.execSync(`cd ${tempFolder}/${tempFolder} && git commit -m 'edited file ${data.filePath}' -m 'Edits made with gitnano' `)
+    cp.execSync(`cd ${tempFolder}/${tempFolder} && git commit -m 'edited file ${data.filePath}' ${argv.noCopyright ? "" : "-m 'Edits made with gitnano (NeonGamerBot-QK/gnano)'"} `)
     console.log(`Uploading..`)
     cp.execSync(`cd ${tempFolder}/${tempFolder} && git push`)
     } catch(e) {

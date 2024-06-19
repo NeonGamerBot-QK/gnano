@@ -1,0 +1,23 @@
+{
+  "name": "gnano",
+  "version": "0.0.1",
+  "description": "use nano on a github file",
+  "main": "src/index.js",
+  "repository": "https://github.com/NeonGamerBot-QK/gnano.git",
+  "author": "Saahil <neon@saahild.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "bin": {
+    "gnano": "./bin/run"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "ncc build src/index.js -o dist -m -s "
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1"
+  }
+}
