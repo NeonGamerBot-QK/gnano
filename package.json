@@ -1,6 +1,6 @@
 {
   "name": "gnano",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "use nano on a github file",
   "main": "src/index.js",
   "repository": "https://github.com/NeonGamerBot-QK/gnano.git",
